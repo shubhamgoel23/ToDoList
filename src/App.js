@@ -1,10 +1,10 @@
-
+import ToDoList from './ToDoList'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      Test
+      <ToDoList />
     </div>
   );
 }
