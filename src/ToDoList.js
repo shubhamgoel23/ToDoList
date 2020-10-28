@@ -36,6 +36,12 @@ class ToDoList extends Component {
 
     }
 
+    componentDidUpdate(prevProps, prevState){
+        console.log("INSIDE COMPONENT DID UPDATE")
+        console.log(prevState.todos)
+        console.log(this.state.todos)
+    }
+
     toggleCompletion(id){
         const updateTodos = this.state.todos.map(todo => {
             if(todo.id === id){
